@@ -1,14 +1,10 @@
-# Exercise 19 - Dom manipulation and Events
+# Exercise 19 - Event delegation
 
-For this exercise, you are going to finish two functions. The `addPokemonItem` function and the `renderList` function.
+For this exercise, you are going to use event delegation to find out what index or id a button click event is coming from.
 
-The submit event handler is already wired up, and everytime the user hits submit the `addPokemonItem` function is called.
+You will have to write an event handler and register to listen to the event on click.
 
-The `addPokemonItem` function should simply add what the user has typed in into our array of pokemons and once our array is updated the function would call `renderList` to redraw our list.
-
-The `renderList` function is responsible for first clearing the children in the list and then redrawing all of the children. It might seem silly to redraw the whole list everytime, as opposed to just using `appendChild()` on the list item to add the new item. The reason we do this is that it simplifies our program logic, and because JavaScript runs so quickly we don't really notice the extra compute cycles being used.
-
-Optionally, you can also ignore the existing functions and write your own code completely.
+The event handler should be registered to the parent UL. There are some instructions to help you, though there are many different ways you could acheive the desired outcome.
 
 Detailed instructions for what JS to add are in your your `javascript-start.js` file. You will not have to update the `HTML` or `CSS` for this exercise.
 
