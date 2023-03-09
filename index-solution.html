@@ -29,21 +29,26 @@
     <main>
       <h1>Got to catch them all!</h1>
 
-      <form class="add-pokemon">
-        <label for="pokemon-name">Pokemon name:</label>
-        <input
-          type="text"
-          name="item"
-          id="pokemon-name"
-          placeholder="Pikachu"
-          required
-        />
-        <input type="submit" value="Add Pokemon" />
-      </form>
-
       <ul class="poke-items">
-        <li>Loading pokemons...</li>
+        <li>
+          <p>Pikachu</p>
+          <button id="poke-0" data-pokemon="0">Click me</button>
+        </li>
+        <li>
+          <p>Meowth</p>
+          <button id="poke-1" data-pokemon="1">Click me</button>
+        </li>
+        <li>
+          <p>Charizard</p>
+          <button id="poke-2" data-pokemon="2">Click me</button>
+        </li>
+        <li>
+          <p>Gyarados</p>
+          <button id="poke-3" data-pokemon="3">Click me</button>
+        </li>
       </ul>
+
+      <p>You clicked on: <span class="message bold">(nothing yet)</span></p>
     </main>
 
     <script src="./javascript-solution.js"></script>

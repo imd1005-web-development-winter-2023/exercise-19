@@ -70,9 +70,13 @@ main h1 {
   font-size: 2rem;
 }
 
+main span {
+  font-weight: bold;
+}
+
 main ul.poke-items {
   list-style-type: none;
-  margin: 0px;
+  margin: 0px 0px 15px 0px;
   padding: 0px;
 }
 
@@ -91,20 +95,42 @@ main ul.poke-items li {
   transition: all;
 }
 
-@keyframes add-new-item-annimation {
-  from {
-    transform: translateX(-10%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
+main ul.poke-items li button {
+  background-color: #222;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 10px 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
 }
 
-.new-item-annimate {
-  transform-origin: 10% 0;
-  animation: add-new-item-annimation 0.3s linear;
+main ul.poke-items li button:hover,
+main ul.poke-items li button:focus {
+  opacity: 0.75;
+  transform: translateY(-2px);
+}
+
+main ul.poke-items li button:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
 
 /*
